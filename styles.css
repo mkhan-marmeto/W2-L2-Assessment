@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 1117px;
+    background: linear-gradient(105.54deg, #F4A764 -2.93%, #FFDEC2 72.14%);
+    transition: background 0.5s ease-in-out;
+    background-repeat: no-repeat;
+}
+
+header {
+    height: 64px;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 54px auto; /* Center header horizontally */
+    /* flex-wrap: wrap; */
+}
+
+#splide {
+    width: 500px;
+    height: 500px;
+    margin: 0 auto;
+}
+
+.splide__slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.splide__slide img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.splide__slide.is-active img {
+    opacity: 1;
+}
+
+.splide__arrow {
+    display: block;
+    height: 75px;
+    width: 75px;
+    border: 2px solid #FFFFFF;
+    background: none;
+    color: #FFFFFF;
+    margin-top: 80px; /* Adjust margin top */
+    margin-right: -50px; /* Add margin right */
+    margin-left: -50px; /* Add margin left */
+    padding: 20px; /* Add padding */
+    box-sizing: border-box; /* Include padding in the width and height */
+}
+
+
+.logo-wrapper {
+    height: 51px;
+    width: 123px;
+}
+
+#logo-image {
+    height: 100%;
+    width: 100%;
+}
+
+.nav-links {
+    width: 500px;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 600px;
+}
+
+a {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 36px;
+    color: #1C1415;
+    text-decoration: none;
+    cursor: pointer;
+    font-family: "Poppins", sans-serif;
+}
+
+.header-button {
+    background: #1C1415;
+    width: 168px;
+    height: 64px;
+    padding: 14px 38px;
+    color: #FFFFFF;
+    border-radius: 50px;
+    font-family: "Poppins", sans-serif;
+    font-size: 21px;
+    font-weight: 500;
+}
+
+.product-data {
+    width: 613px;
+    height: 522px;
+    top: 262px;
+    left: 155px;
+    gap: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.product-data.show {
+    opacity: 1;
+}
+
+.title1 {
+    font-family: "Sofia Sans", sans-serif;
+    font-size: 76px;
+    font-weight: 900;
+    line-height: 104.12px;
+    letter-spacing: -0.01em;
+    text-align: left;
+    color: #FFFFFF;
+    white-space: nowrap;
+    /* overflow: hidden;     */
+    text-overflow: ellipsis;
+}
+
+.title2 {
+    font-family: "Sofia Sans", sans-serif;
+    font-size: 52px;
+    font-weight: 900;
+    line-height: 60.06px;
+    letter-spacing: -0.01em;
+    text-align: left;
+}
+
+.product-description {
+    font-family: "Poppins", sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 45.6px;
+    text-align: left;
+}
+
+#product-price {
+    font-family: "Poppins", sans-serif;
+    font-size: 70px;
+    font-weight: 700;
+    line-height: 95.9px;
+    letter-spacing: -0.01em;
+    text-align: left;
+    color: #FFFFFF;
+}
+
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 100px;
+    margin-left: 155px;
+}
+
+#circle {
+    width: 60px;
+    height: 60px;
+    gap: 0px;
+    border: 2px 0px 0px 0px;
+    opacity: 0px;
+}
+
+.socials {
+    display: flex;
+    margin-top: 20px;
+    margin-left: -8px;
+}
+
+.icons {
+    position: relative;
+    bottom: 19px;
+    right: 47px;
+}
+
+.icon-size {
+    height: 20px;
+    height: 20px;
+}
+
+
+/* Media query for screens smaller than 600px (typical smartphones) */
+@media only screen and (max-width: 600px) {
+    header {
+        width: 90%; /* Adjust width for smaller screens */
+        margin: 20px auto; /* Adjust margin for smaller screens */
+        flex-direction: column; /* Stack items vertically */
+        height: auto; /* Allow height to adjust based on content */
+        justify-content: center; /* Center items vertically */
+    }
+}
+
+/* Media query for screens smaller than 600px (typical smartphones) */
+@media only screen and (max-width: 600px) {
+    #splide {
+        width: 90%; /* Adjust width for smaller screens */
+        height: auto; /* Allow height to adjust based on content */
+    }
+
+    .splide__arrow {
+        margin-top: 20px; /* Adjust margin top for smaller screens */
+        margin-right: 0; /* Remove margin right for smaller screens */
+        margin-left: 0; /* Remove margin left for smaller screens */
+    }
+}
+
+/* Media query for screens smaller than 600px (typical smartphones) */
+@media only screen and (max-width: 600px) {
+    .product-data {
+        width: 90%; /* Adjust width for smaller screens */
+        height: auto; /* Allow height to adjust based on content */
+        top: initial; /* Remove top position */
+        left: initial; /* Remove left position */
+        margin: 20px auto; /* Center the product data */
+    }
+
+    .product-container {
+        margin: 20px auto; /* Center the product container */
+        margin-top: 50px; /* Adjust top margin */
+        margin-left: 0; /* Remove left margin */
+    }
+
+    .title1 {
+        font-size: 36px; /* Adjust font size for smaller screens */
+        line-height: 48px; /* Adjust line height for smaller screens */
+    }
+
+    .title2 {
+        font-size: 28px; /* Adjust font size for smaller screens */
+        line-height: 36px; /* Adjust line height for smaller screens */
+    }
+
+    .product-description {
+        font-size: 20px; /* Adjust font size for smaller screens */
+        line-height: 30px; /* Adjust line height for smaller screens */
+    }
+
+    #product-price {
+        font-size: 42px; /* Adjust font size for smaller screens */
+        line-height: 60px; /* Adjust line height for smaller screens */
+    }
+
+    #circle {
+        width: 40px; /* Adjust circle size for smaller screens */
+        height: 40px; /* Adjust circle size for smaller screens */
+    }
+
+    .icons {
+        bottom: 15px; /* Adjust position for smaller screens */
+        right: 30px; /* Adjust position for smaller screens */
+    }
+
+    .icon-size {
+        height: 16px; /* Adjust icon size for smaller screens */
+        height: 16px; /* Adjust icon size for smaller screens */
+    }
+}

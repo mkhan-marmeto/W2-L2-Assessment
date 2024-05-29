@@ -1,0 +1,51 @@
+{
+    "header": {
+      "logo": "/Assets/Logo.png",
+      "links": {
+        "shop": "#",
+        "brands": "#",
+        "contact_us": "contact_us_url"
+      },
+      "button": true
+    },
+    "products": [
+      {
+        "id": 1,
+        "uppertext": "Exquisite Watches",
+        "lowertext": "Gold Luxury, Choose Us",
+        "description": "Discover the Perfect Watch for Every Occasion and Elevate Your Style with Timeless Elegance and Precision Craftsmanship - watch",
+        "price": "$499.00",
+        "image": "./Assets/watch1.png",
+        "ambient_color": "linear-gradient(105.54deg, #F4A764 -2.93%, #FFDEC2 72.14%)"
+      },
+      {
+        "id": 2,
+        "uppertext": "Dainty Timepieces",
+        "lowertext": "Silver Luxury, Choose Us",
+        "description": "Explore the Ideal Timepiece for Any Moment and Enhance Your Style with Timeless Sophistication and Impeccable Craftsmanship - timepiece",
+        "price": "$529.00",
+        "image": "./Assets/watch2.png",
+        "ambient_color": "linear-gradient(105.54deg, #ADB0B0 -2.93%, #E1E1E1 72.14%)"
+      },
+      {
+        "id": 3,
+        "uppertext": "Elegant Timepieces",
+        "lowertext": "Choose Luxury, Choose Us",
+        "description": "Discover the Perfect Watch for Every Occasion and Elevate Your Style with Timeless Elegance and Precision Craftsmanship - watch",
+        "price": "$20.99",
+        "image": "./Assets/watch3.png",
+        "ambient_color": "linear-gradient(105.54deg, #30A357 -2.93%, #75E39A 72.14%)"
+      },
+      {
+        "id": 4,
+        "uppertext": "Refined Timepieces",
+        "lowertext": "Choose Luxury, Choose Us",
+        "description": "Explore the Ideal Timepiece for Any Moment and Enhance Your Style with Timeless Sophistication and Impeccable Craftsmanship - timepiece",
+        "price": "$599.00",
+        "image": "./Assets/watch4.png",
+        "ambient_color": "linear-gradient(105.54deg, #F24F4F -2.93%, #FFA895 72.14%)"
+      }
+    ],
+    "social_logos": ["facebook", "twitter", "instagram"]
+  }
+  
