@@ -1,6 +1,6 @@
 {
     "header": {
-      "logo": "/Assets/Logo.png",
+      "logo": "./Assets/Logo.png",
       "links": {
         "shop": "#",
         "brands": "#",
